@@ -1,0 +1,28 @@
+---
+title: "Project Assignment 3"
+author: "Grace Dorgbley"
+date: "12/11/2019"
+output: word_document
+---
+
+```{r}
+library(descr)
+load("C:/Users/GRACE DORGBLEY/Desktop/SECOND YEAR(sem 1)/statistics/assignments/projectAssignment/merged_r6_2016.RData")
+
+
+```
+
+```{r}
+variables <- c("Q66G","REGION","EA_FAC_D","Q55C","Q8C")
+#variables <- c("Q66G")
+
+my_var=merged_r6_2016[variables]
+
+freq(my_var$Q66G)
+freq(my_var$REGION)
+freq(my_var$EA_FAC_D)
+freq(my_var$Q55C)
+
+freq(my_var$Q8C)
+```
+
